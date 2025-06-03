@@ -1,0 +1,29 @@
+{
+  "name": "telegram-downloader",
+  "author": "@KingSurf7 @Dr_internet4",
+  "title": "Telegram Downloader",
+  "description": "Télécharge vidéos, images et documents depuis Telegram",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/kingsurf7/T-l-gram-downloader"
+  },
+  "scripts": [{
+    "event": "onResolve",
+    "match": {
+      "urls": [
+        "*://t.me/*/video/*",
+        "*://t.me/*/photo/*",
+        "*://t.me/*/file/*",
+        "*://t.me/*/*"  // Pour les posts simples
+      ]
+    },
+    "entry": "dist/index.js"  // Fichier compilé
+  }],
+  "settings": [{
+    "name": "useEmbed",
+    "title": "Utiliser le mode embed",
+    "description": "Active le scraping via ?embed=1",
+    "type": "boolean",
+    "value": true
+  }]
+}
