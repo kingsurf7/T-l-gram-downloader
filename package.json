@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --watch --mode development"
+  },
+  "dependencies": {
+    "jsdom": "^20.0.0"  // Pour le scraping avancé
+  }
+}
