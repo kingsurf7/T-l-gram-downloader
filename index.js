@@ -6,7 +6,7 @@ gopeed.events.onResolve(async (ctx) => {
   if (!tgUrl.includes("t.me/")) return;
 
   try {
-    const response = await fetch("https://ton-api-flask.onrender.com/resolve-telegram", {
+    const response = await fetch("https://mid-stormi-kingsurf7-3acfd5bd.koyeb.app/resolve-telegram", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ url: tgUrl })
