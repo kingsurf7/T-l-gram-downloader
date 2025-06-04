@@ -1,31 +1,19 @@
 {
-  "name": "telegram-downloader",
-  "author": "KingSurf7",
-  "title": "Telegram Universal Downloader",
-  "description": "Télécharge automatiquement vidéos, images et documents depuis n'importe quel lien Telegram",
-  "version": "2.0.0",
-  "repository": {
-    "url": "https://github.com/kingsurf7/T-l-gram-downloader"
-  },
+  "name": "telegram-ultra",
+  "author": "@KingSurf7",
+  "version": "Beta-1.0",
   "scripts": [{
     "event": "onResolve",
     "match": {
       "urls": [
         "*://t.me/*",
         "*://telegram.org/*",
-        "*://telegram.dog/*"
+        "*://cdn*.telegram.org/*"
       ]
     },
     "entry": "index.js"
   }],
-  "settings": [{
-    "name": "quality",
-    "title": "Qualité vidéo",
-    "type": "string",
-    "value": "hd",
-    "options": [
-      {"label": "HD", "value": "hd"},
-      {"label": "SD", "value": "sd"}
-    ]
-  }]
+  "settings": {
+    "auto_update": true
+  }
 }
