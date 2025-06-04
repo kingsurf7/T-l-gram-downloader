@@ -17,8 +17,13 @@
       "entry": "index.js"
     }
   ],
-  "settings": [{
-    "auto_update": true
-  }],
-  
+  "settings": [
+    {
+      "name": "auto_update",
+      "title": "Auto Update",
+      "description": "Enable automatic updates",
+      "type": "boolean",
+      "value": true
+    }
+  ]
 }
