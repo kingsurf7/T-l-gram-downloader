@@ -17,6 +17,8 @@
       "entry": "index.js"
     }
   ],
-  "settings": {},
-  "auto_update": true
+  "settings": [{
+    "auto_update": true
+  }],
+  
 }
