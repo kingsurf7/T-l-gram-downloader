@@ -1,21 +1,22 @@
 {
   "name": "telegram-ultra",
-  "title": "telegram downloader", 
-  "description": "download telegram file", 
+  "title": "Telegram Downloader",
+  "description": "Download files from Telegram links",
   "author": "@KingSurf7",
-  "version": "1.0",
-  "scripts": [{
-    "event": "onResolve",
-    "match": {
-      "urls": [
-        "*://t.me/*",
-        "*://telegram.org/*",
-        "*://cdn*.telegram.org/*"
-      ]
-    },
-    "entry": "index.js"
-  }],
-  "settings": [{
-    "auto_update": true
-  }] 
+  "version": "1.0.0",
+  "scripts": [
+    {
+      "event": "onResolve",
+      "match": {
+        "urls": [
+          "*://t.me/*",
+          "*://telegram.org/*",
+          "*://cdn*.telegram-cdn.org/*"
+        ]
+      },
+      "entry": "index.js"
+    }
+  ],
+  "settings": {},
+  "auto_update": true
 }
