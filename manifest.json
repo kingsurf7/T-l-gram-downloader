@@ -13,7 +13,7 @@
     },
     "entry": "index.js"
   }],
-  "settings": {
+  "settings": [{
     "auto_update": true
-  }
+  }] 
 }
