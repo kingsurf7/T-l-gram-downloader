@@ -1,21 +1,20 @@
-
 {
   "name": "telegram-ultra",
   "title": "Telegram Downloader",
   "description": "Download Telegram files by pasting t.me links",
   "author": "@KingSurf7",
   "version": "1.0.0",
-  "scripts": [
-    {
-      "event": "onResolve",
-      "match": {
+  "script": {
+    "event": "onResolve",
+    "matches": [
+      {
         "urls": [
           "*://t.me/*"
         ]
-      },
-      "entry": "index.js"
-    }
-  ],
+      }
+    ],
+    "entry": "index.js"
+  },
   "settings": {
     "auto_update": true
   }
