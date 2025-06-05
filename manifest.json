@@ -6,14 +6,20 @@
   "version": "1.0.0",
   "script": {
     "event": "onResolve",
-    "matches": [
+    "match": [
       {
         "urls": ["*://t.me/*"]
       }
     ],
     "entry": "index.js"
   },
-  "settings":[{
-    "auto_update": true
-  }], 
+  "settings":[
+    {
+      "name": "auto_update",
+      "title": "Auto Update",
+      "description": "Enable automatic updates",
+      "type": "boolean",
+      "value": true
+    }
+   ] 
 }
